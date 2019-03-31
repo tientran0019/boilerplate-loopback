@@ -1,6 +1,6 @@
 # loopback-boilerplate
 
-A boilerplate for a RESTful API (api only) using LoopBack
+A boilerplate for a RESTful API (api only) using LoopBack 3.x.x
 
 ### What is LoopBack and How Does It Work with Node?
 LoopBack is a framework for creating APIs and connecting them with backend data sources. Built on top of Express, it can take a data model definition and easily generate a fully functional end-to-end REST API that can be called by any client.
