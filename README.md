@@ -13,7 +13,7 @@ You will of course need Node installed on your machine to follow along. Get it h
 ### Get Started
 - **Clone this repository or use npm**
 ```bash
-$ git clone https://github.com/tientran0019/loopback-boilerplate.git
+$ git clone https://github.com/tientran0019/boilerplate-loopback.git
 ```
 
 - **Install dependencies specified in package.json**
