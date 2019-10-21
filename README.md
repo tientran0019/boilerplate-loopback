@@ -1,4 +1,4 @@
-# loopback-boilerplate
+# boilerplate-loopback
 
 A boilerplate for a RESTful API (api only) using LoopBack 3.x.x
 
