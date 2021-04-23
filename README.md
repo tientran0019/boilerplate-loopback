@@ -103,14 +103,35 @@ MONGO_PASSWORD=''
 
 <img src="./screenshot/email.png" width="300" />
 
-- Add pagination `/boot/pagination.js`
+- Add wrap success `/boot/wrap-success.js`
+
+
+
+- Add timestamp `/mixins/timestamp`
 
 ```js
 {
-  "total": 35,
-  "limit": 12,
-  "skip": 0,
-  "data": [...],
+  "statusCode": 200,
+  "result": {
+    ...,
+  }
+}
+```
+
+- Add pagination `/mixins/paginator`
+
+```js
+{
+  "statusCode": 200,
+  "result": {
+    "totalItemCount": 1,
+    "totalPageCount": 1,
+    "itemsPerPage": 10,
+    "currentPage": 2,
+    "nextPage": 3,
+    "previousPage": 1,
+    "data": [...],
+  }
 }
 ```
 
