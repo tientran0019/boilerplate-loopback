@@ -36,6 +36,8 @@ $ yarn start
 - `yarn prod:pm2`: Starts production server with `pm2`.
 
 ### Built-in example
+- Mixins: Timestamp, readonly, pagination, counts.
+
 - User model: login via email/password, facebook and google.
 
 - Container model: [Storage component for LoopBack](https://github.com/strongloop/loopback-component-storage). Support Amazon S3.
