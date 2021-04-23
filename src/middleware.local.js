@@ -33,7 +33,7 @@ module.exports = { // eslint-disable-line
 		'helmet#hsts': {
 			'params': {
 				'maxAge': 0,
-				'includeSubdomains': true,
+				'includeSubDomains': true,
 			},
 		},
 		'helmet#hidePoweredBy': {},
