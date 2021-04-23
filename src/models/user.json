@@ -10,17 +10,11 @@
 		"order": "createdAt DESC"
 	},
 	"mixins": {
-		"Counts": true
+		"Counts": true,
+		"Timestamp": true,
+		"Paginator": true
 	},
 	"properties": {
-		"createdAt": {
-			"type": "date",
-			"defaultFn": "now"
-		},
-		"updatedAt": {
-			"type": "date",
-			"defaultFn": "now"
-		},
 		"status": {
 			"type": "string",
 			"default": "active"

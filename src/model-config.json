@@ -12,6 +12,9 @@
 			"loopback/src/mixins",
 			"../node_modules/loopback-counts-mixin",
 			"../common/mixins",
+			"./mixins/timestamp",
+			"./mixins/readonly",
+			"./mixins/paginator",
 			"./mixins"
 		]
 	},
@@ -44,6 +47,10 @@
 	"Role": {
 		"dataSource": "mongod",
 		"public": false
+	},
+	"Component": {
+		"dataSource": "mongod",
+		"public": true
 	},
 	"user": {
 		"dataSource": "mongod",

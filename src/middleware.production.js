@@ -60,7 +60,7 @@ module.exports = { // eslint-disable-line
 	'final:after': {
 		'strong-error-handler': {
 			'params': {
-				'debug': true,
+				'debug': false,
 				'log': true,
 				'rootProperty': false,
 			},

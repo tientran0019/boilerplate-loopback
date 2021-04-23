@@ -1,24 +1,51 @@
-*.csv
-*.dat
-*.iml
-*.log
-*.out
-*.pid
-*.seed
-*.sublime-*
-*.swo
-*.swp
-*.tgz
-*.xml
-.DS_Store
+.DS_STORE
+.env
+.env.*
 .idea
-.project
-.strong-pm
-coverage
-node_modules
-npm-debug.log
+.tmp
+.swp
+/.next
+/.analyzer
+/src/.next
+out
+
+dist
+yarn.lock
 yarn-error.log
+package-lock.json
+.idea/
+
+# maybe some logs
 /log
 
-package-lock.json
-yarn.lock
+# webpack build target folder
+/build
+
+# npm modules
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+/node_modules
+
+# bower, but nobody uses it since we've got webpack
+bower_components/
+
+# npm errors
+npm-debug.log
+
+# github pages
+gh-pages/
+
+# for OS X users
+.DS_Store
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# test coverage folder
+coverage
+
+static/server
