@@ -8,8 +8,6 @@
 *------------------------------------------------------- */
 
 import login from 'src/utils/login';
-import loginFb from 'src/utils/loginFb';
-import loginGg from 'src/utils/loginGg';
 import sendMailVerify from 'src/utils/sendMailVerify';
 import loopback from 'loopback';
 
@@ -45,11 +43,6 @@ export default function (User) {
 	});
 
 	User.login = login;
-
-	User.loginFacebook = loginFb;
-
-	User.loginGoogle = loginGg;
-
 
 	// send password reset link when requested
 	User.on('resetPasswordRequest', (info) => {

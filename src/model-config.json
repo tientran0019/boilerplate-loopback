@@ -48,10 +48,6 @@
 		"dataSource": "mongod",
 		"public": false
 	},
-	"Component": {
-		"dataSource": "mongod",
-		"public": true
-	},
 	"user": {
 		"dataSource": "mongod",
 		"public": true

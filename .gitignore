@@ -49,3 +49,7 @@ gh-pages/
 coverage
 
 static/server
+
+*.http
+
+/logs/*

@@ -17,6 +17,13 @@ module.exports = { // eslint-disable-line
 		'name': 'mongod',
 		'connector': 'mongodb',
 		'allowExtendedOperators': true,
+		'useNewUrlParser': true,
+		'useFindAndModify': false,
+		'useUnifiedTopology': true,
+		'useCreateIndex': true,
+		'writeConcern': {
+			'j': true,
+		},
 	},
 	'emailDs': {
 		'name': 'emailDs',

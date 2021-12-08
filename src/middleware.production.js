@@ -1,10 +1,13 @@
 /* eslint-disable no-template-curly-in-string */
 /* --------------------------------------------------------
-* Author Trần Đức Tiến
-* Email ductienas@gmail.com
+* Copyright ZelloSoft
+* Website: https://www.zellosoft.com
+*
+* Author Tien Tran
+* Email tientran@zellosoft.com
 * Phone 0972970075
 *
-* Created: 2018-05-21 23:26:08
+* Created: 2021-09-24 11:15:29
 *------------------------------------------------------- */
 
 module.exports = { // eslint-disable-line
@@ -15,7 +18,7 @@ module.exports = { // eslint-disable-line
 	},
 	'initial': {
 		'compression': {
-			'enabled': false,
+			'enabled': true,
 		},
 		'cors': {
 			'params': {
@@ -61,8 +64,10 @@ module.exports = { // eslint-disable-line
 		'strong-error-handler': {
 			'params': {
 				'debug': false,
-				'log': true,
+				'log': false,
 				'rootProperty': false,
+				'negotiateContentType': true,
+				'safeFields': ['message', 'errorCode', 'statusCode'],
 			},
 		},
 	},

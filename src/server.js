@@ -1,34 +1,46 @@
 /* --------------------------------------------------------
-* Author Trần Đức Tiến
-* Email ductienas@gmail.com
+* Copyright ZelloSoft
+* Website: https://www.zellosoft.com
+*
+* Author Tien Tran
+* Email tientran@zellosoft.com
 * Phone 0972970075
 *
-* Created: 2017-12-05 14:08:29
+* Created: 2021-09-24 11:15:38
 *------------------------------------------------------- */
 
 import loopback from 'loopback';
 import boot from 'loopback-boot';
-import morgan from 'morgan';
+// import useragent from 'express-useragent';
 import PrettyError from 'pretty-error';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
+
+import useLogger from 'src/utils/request-logger';
+import useRateLimit from 'src/utils/rate-limit';
 
 dotenv.config();
 
 export const app = loopback();
 
-// require('loopback-counts-mixin')(app);
+const __DEV__ = process.env.NODE_ENV !== 'production';
 
-const prettyError = new PrettyError();
+if (__DEV__) {
+	const prettyError = new PrettyError();
 
-prettyError.start();
+	prettyError.start();
+}
 
 // configure body parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
-if (process.env.NODE_ENV !== 'production') {
-	app.use(morgan('tiny'));
-}
+// app.use(bodyParser.json());
+
+// app.use(useragent.express());
+
+useRateLimit(app);
+
+useLogger(app);
 
 app.start = () => {
 	// start the web server

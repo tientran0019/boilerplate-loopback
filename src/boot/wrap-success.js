@@ -13,7 +13,7 @@ export default function (app) {
 		ctx.result = {
 			statusCode: 200,
 			// message: ctx.methodString + ' success',
-			result: ctx.result,
+			result: ctx.result || {},
 		};
 
 		next();

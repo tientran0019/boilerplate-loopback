@@ -3,11 +3,11 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-prototype-builtins */
 /* --------------------------------------------------------
-* Author Trần Đức Tiến
-* Email ductienas@gmail.com
+* Author Tien Tran
+* Email tientran0019@gmail.com
 * Phone 0972970075
 *
-* Created: 2018-02-28 00:59:47
+* Created: 2021-04-23 08:38:28
 *------------------------------------------------------- */
 
 import slug from 'slugify';

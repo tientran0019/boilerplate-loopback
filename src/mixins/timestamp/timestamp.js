@@ -20,13 +20,14 @@ const warn = (options, message) => {
 export default (Model, bootOptions = {}) => {
 	debug('TimeStamp mixin for Model %s', Model.modelName);
 
-	const options = Object.assign({
+	const options = {
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
-		required: true,
+		// required: true,
 		validateUpsert: true, // default to turning validation off
 		silenceWarnings: false,
-	}, bootOptions);
+		...bootOptions,
+	};
 
 	debug('options', options);
 

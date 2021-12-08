@@ -8,5 +8,5 @@
 
 export default {
 	userStatus: ['active', 'inactive'],
-	userLoginType: ['email', 'facebook', 'google'],
+	userLoginType: ['email'],
 };
